@@ -6,9 +6,10 @@ const Login = (props) => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
+  
   const handleLogin = () => {
     if (email && password) {
-      
+
         props.navigation.navigate("Home")
     } else {
       Alert.alert('Error', 'Please enter valid email and password.');
